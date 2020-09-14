@@ -2,18 +2,18 @@
 
 ## Form to submit a toilet
 ### Form fields
-* City (select) `city`
-* Street (text) `street`
-* House Nr. (text) `streetnr`
-* Name of location (text) `name`
+* City (select) `city` DONE
+* Street (text) `street` DONE
+* House Nr. (text) `streetnr` DONE
+* Name of location (text) `name` DONE
 * Features
-  * Mirror (checkbox) `feat-mirror`
-  * Paper towels (checkbox) `feat-papertowels`
-  * Perfume (checkbox) `feat-perfume`
-  * Accessibility (text) `feat-access`
-  * Soap (checkbox) `feat-soap`
-* Number of stalls (number) `stalls`
-* Rating (1 - 5 toilet seats) (radio group) `rating` (Number)
+  * Mirror (checkbox) `feat-mirror` DONE
+  * Paper towels (checkbox) `feat-papertowels` DONE
+  * Perfume (checkbox) `feat-perfume` DONE
+  * Accessibility (text) `feat-access` DONE
+  * Soap (checkbox) `feat-soap` DONE
+* Number of stalls (number) `stalls` DONE
+* Rating (1 - 5 toilet seats) (radio group) `rating` (Number) DONE
 
 ## List of submissions
 * Table view

@@ -1,3 +1,7 @@
 table tr:nth-child(even) { 
     background-color: gray;
 }
+*{
+    background-color: gold;
+}
+
