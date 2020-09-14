@@ -1,0 +1,28 @@
+main {
+    background-color: lightseagreen;
+    text-align: center;
+    max-width: 800px;
+}
+
+form {
+    height: 100px;
+    width: 800px;
+}
+
+input:valid {
+    padding: 2px;
+    background-color: pink;
+}
+
+input:invalid {
+    padding: 2px;
+    background-color: lightsteelblue;
+}
+
+/* Style table for even-row greying:
+
+table tr:nth-child(even) { try with: tr:nth-child(even)
+    background-color: lightgray;
+}
+
+*/
