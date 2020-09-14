@@ -1,7 +1,10 @@
 main {
+
     background-color: lightseagreen;
     text-align: center;
     max-width: 800px;
+    margin: 15px;
+    padding: 15px;
 }
 
 form {
@@ -18,11 +21,46 @@ input:invalid {
     padding: 2px;
     background-color: lightsteelblue;
 }
-
-/* Style table for even-row greying:
-
-table tr:nth-child(even) { try with: tr:nth-child(even)
-    background-color: lightgray;
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
 }
 
-*/
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+ 
+

@@ -5,66 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="style.css">
-    <title>Rate-A-Poo 💩</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rate-A-💩</title>
 </head>
 
 <body>
 
     <main>
         <h1 id="title">Rate-A-Potty</h1>
-        <p id="description">Help us help you</p>
+        <h2 id="description">Help us help you</h2>
 
-        <form id="survey-form">
-
-            <label id="name-label">
-                Name:
-                <input type="text" placeholder="Enter your name" required id="name">
-            </label>
-            <label id="email-label">
-                Email:
-                <input type="text" placeholder="Enter your email" required pattern="paul@quintly.com" id="email">
-            </label>
-            <label id="number-label">
-                Number:
-                <input type="text" placeholder="Enter your number" required pattern="[0-9]" id="number">
-            </label>
-
+        <form id="survey-form" action="https://kloapp.herokuapp.com/add" method="POST">
             <div>
+                <p>Pick your city:</p>
                 <select id="dropdown">
-                    <option>Number 1</option>
-                    <option>Number 2</option>
-                    <option>1 & 2</option>
+                    <option>Cologne</option>
+                    <option>Weird city (Duss)</option>
+                    <option>Bonn</option>
                 </select>
             </div>
 
+            <br> <!-- style with css -->
+            
             <div>
-                <label>
-                    <input type="radio" name="poopers" value="1"> single pooper
+                <label id="city">
+                    City:
+                    <input type="text" placeholder="Enter the city" required id="text">
+                </label>
+                <label id="street">
+                    Street:
+                    <input type="text" placeholder="Enter the street" required="text">
+                </label>
+                <label id="streetnr">
+                    House Nr:
+                    <input type="text" placeholder="Enter the house nr." required="number" id="number">
                 </label>
                 <label>
-                    <input type="radio" name="poopers" value=">1"> multiple poopers
-                </label>
-                <label>
-                    <input type="checkbox" value="Lu">
-                    Luxury
-                </label>
-                <label>
-                    <input type="checkbox" value="Md">
-                    Mid-range
-                </label>
-                <label>
-                    <input type="checkbox" value="Bj">
-                    Bush-/jungle
+                    Potty-location:
+                    <input type="n" placeholder="Where's the pooper located?" required="text">
                 </label>
             </div>
 
-            <textarea>Rate your Potty!</textarea>
+            <br> <!-- style with css -->
 
-            <input type="submit">submit</input>
+            <h2>💩 features</h2>
+            <div>
+                <label>
+                    <input type="checkbox" name="poopers" value="1"> mirror
+                </label>
+                <label>
+                    <input type="checkbox" name="poopers" value=">1"> towels
+                </label>
+                <label>
+                    <input type="checkbox" name="poopers" value="Lu">
+                    perfume
+                </label>
+                <label>
+                    <input type="checkbox" name="poopers" value="Md">
+                    soap
+                </label>
+                    <select name="stalls" id="">
+                        <option value="1">One stall</option>
+                        <option value="2">Two stalls</option>
+                        <option value="3">Three stalls</option>
+                        <option value="4">Four stalls</option>
+                        <option value="5">Five stalls</option>
+                    </select>
+            </div>
+            <textarea name="feat-access" id="" placeholder="How accessible is it?"></textarea>
+
+            <br> <!-- style with css -->
+
+                <h2>Rate your 💩!</h2>
+            
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+
+
+            </div>
+
+            <br> <!-- style with css -->
+
+            <input type="submit"> submit your responses</input>
+
+            <br> <!-- style with css -->
+            <br> <!-- style with css -->
 
             <button>
-                <a href="" target="blank" id="table-link">
-                    Lookup a 💩
+                
+                <a href="/table.html" target="blank" id="table-link">
+                    Look-up a 💩
                 </a>
             </button>
 
