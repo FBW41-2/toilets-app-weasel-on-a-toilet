@@ -16,7 +16,7 @@
 * Rating (1 - 5 toilet seats) (radio group) `rating` (Number) DONE
 
 ## List of submissions
-* Table view
-* Column for each Form field
+* Table view DONE
+* Column for each Form field 
 * Column titles
 
