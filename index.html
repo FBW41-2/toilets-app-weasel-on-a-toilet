@@ -39,31 +39,36 @@
                 </label>
                 <label>
                     Potty-location:
-                    <input type="text" required="text" name="name">
+                    <input type="text" name="name">
                 </label>
             </div>
 
             <br> <!-- style with css -->
-            <!-- add switches instead of checkboxes (toggle switch) should store value -->
+            <!-- add switches instead of checkboxes (toggle switch) should store 
+                value -->
             <!-- find solutions that use a bit less markup & css -->
 
             <h2>💩 features</h2>
             <div>
-                <label for="">
+                <label class="switch" for="">
                     <input type="checkbox" name="feat-mirror" value="true"> 
                     mirror
+                    <span class="slider"></span>
                 </label>
-                <label>
-                    <input type="checkbox" name="feat-papertowels"> 
+                <label class="switch">
+                    <input type="checkbox" name="feat-papertowels" value="true"> 
                     towels
+                    <span class="slider"></span>
                 </label>
-                <label>
-                    <input type="checkbox" name="feat-perfume">
+                <label class="switch">
+                    <input type="checkbox" name="feat-perfume" value="true">
                     perfume
+                    <span class="slider"></span>
                 </label>
-                <label>
-                    <input type="checkbox" name="feat-soap">
+                <label class="switch">
+                    <input type="checkbox" name="feat-soap" value="true">
                     soap
+                    <span class="slider"></span>
                 </label>
                     <select name="stalls">
                         <option value="1">One stall</option>
@@ -82,7 +87,7 @@
 
                 <h2>Rate your 💩!</h2>
                 <div>
-                    <input type="radio" name="rating" value="5" />
+                    <input type="radio" name="rating" value="5" required />
                     <label for="rating">5 stars</label>
                     <input type="radio" name="rating" value="4" />
                     <label for="rating">4 stars</label>
