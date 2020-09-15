@@ -10,7 +10,7 @@ form {
     width: 800px;
 }
 
-/* inputs acts kinda weird */
+/* inputs focus is kinda weird */
 input:focus {
     padding: 2px;
     border-color: pink;
@@ -27,13 +27,15 @@ input:invalid {
 }
 
 /* switch */
-input[type=checkbox]{
+/* fix: put after in the slider not label - try copy/paste css again */
+/*  */ 
+input[type=checkbox] {
 
-	visibility: hidden;
+	visibility: hidden; /* replace with opacity ? */
 }
 
 .switch {
-	background: grey;
+	background: white;
 	display: block;
 	border-radius: 100px;
 	position: relative;
@@ -46,16 +48,16 @@ input[type=checkbox]{
 	left: 5px;
 	width: 90px;
 	height: 90px;
-	background: #fff;
+	background: grey;
 	border-radius: 90px;
 	transition: 0.3s;
 }
 
-input:checked + label {
+input:checked + .switch {
 	background: #bada55;
 }
 
-input:checked + label:after {
+input:checked + .switch:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
 }
@@ -63,7 +65,6 @@ input:checked + label:after {
 .switch:active:after {
 	width: 130px;
 }
-
 /* end switch */
 
 table {

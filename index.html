@@ -31,7 +31,7 @@
             <div>
                 <label>
                     Street:
-                    <input type="text" required="text" name="street">
+                    <input type="text" required="text" name="street" minlength="3">
                 </label>
                 <label>
                     Street Nr:
@@ -49,7 +49,7 @@
             <!-- find solutions that use a bit less markup & css -->
 
             <h2>💩 features</h2>
-            <div>
+            <div> <!-- it's about the for attri! remove the fors ! -->
                 <label class="switch" for="feat-mirror">
                     <input type="checkbox" name="feat-mirror" value="true"> 
                     mirror
@@ -78,6 +78,8 @@
                         <option value="5">Five stalls</option>
                     </select>
             </div>
+
+            <!-- add label -->
             <textarea name="feat-access" id="survey-form"></textarea>
 
             <br> <!-- style with css -->
@@ -87,7 +89,7 @@
 
                 <h2>Rate your 💩!</h2>
                 <div>
-                    <input type="radio" name="rating" value="5" required />
+                    <input type="radio" name="rating" value="5" required minlength="1" maxlength="5"/>
                     <label for="rating">5 stars</label>
                     <input type="radio" name="rating" value="4" />
                     <label for="rating">4 stars</label>
