@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script data-require="jquery@*" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link data-require="fontawesome@*" data-semver="4.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
     <title>Rate-A-💩</title>
 </head>
 
@@ -44,29 +46,26 @@
             </div>
 
             <br> <!-- style with css -->
-            <!-- add switches instead of checkboxes (toggle switch) should store 
-                value -->
-            <!-- find solutions that use a bit less markup & css -->
 
             <h2>💩 features</h2>
             <div> <!-- it's about the for attri! remove the fors ! -->
-                <label class="switch" for="feat-mirror">
-                    <input type="checkbox" name="feat-mirror" value="true"> 
+                <label class="switch">
+                    <input type="checkbox" name="feat-mirror"> 
                     mirror
                     <span class="slider"></span>
                 </label>
-                <label class="switch" for="feat-papertowels">
-                    <input type="checkbox" name="feat-papertowels" value="true"> 
+                <label class="switch">
+                    <input type="checkbox" name="feat-papertowels"> 
                     towels
                     <span class="slider"></span>
                 </label>
-                <label class="switch" for="feat-perfume">
-                    <input type="checkbox" name="feat-perfume" value="true">
+                <label class="switch">
+                    <input type="checkbox" name="feat-perfume">
                     perfume
                     <span class="slider"></span>
                 </label>
-                <label class="switch" for="feat-soap">
-                    <input type="checkbox" name="feat-soap" value="true">
+                <label class="switch">
+                    <input type="checkbox" name="feat-soap">
                     soap
                     <span class="slider"></span>
                 </label>
@@ -88,18 +87,16 @@
             <!-- or add some scale/ slider -->
 
                 <h2>Rate your 💩!</h2>
-                <div>
-                    <input type="radio" name="rating" value="5" required minlength="1" maxlength="5"/>
-                    <label for="rating">5 stars</label>
-                    <input type="radio" name="rating" value="4" />
-                    <label for="rating">4 stars</label>
-                    <input type="radio" name="rating" value="3" />
-                    <label for="rating">3 stars</label>
-                    <input type="radio" name="rating" value="2" />
-                    <label for="rating">2 stars</label>
-                    <input type="radio" name="rating" value="1" />
-                    <label for="rating">1 star</label>
-                </div>
+                  <!-- hide the input -->  
+                  <input type="number" name="rating" id="rating-input"/>
+                  <div class="rating" role="optgroup">
+                    <!-- in Rails just use 1.upto(5) -->  
+                    <i class="fa fa-star-o fa-2x rating-star" id="rating-1" data-rating="1" tabindex="0" aria-label="Rate as one out of 5 stars" role="radio"></i>
+                    <i class="fa fa-star-o fa-2x rating-star" id="rating-2" data-rating="2" tabindex="0" aria-label="Rate as two out of 5 stars" role="radio"></i>
+                    <i class="fa fa-star-o fa-2x rating-star" id="rating-3" data-rating="3" tabindex="0" aria-label="Rate as three out of 5 stars" role="radio"></i>
+                    <i class="fa fa-star-o fa-2x rating-star" id="rating-4" data-rating="4" tabindex="0" aria-label="Rate as four out of 5 stars" role="radio"></i>
+                    <i class="fa fa-star-o fa-2x rating-star" id="rating-5" data-rating="5" tabindex="0" aria-label="Rate as five out of 5 stars" role="radio"></i>
+                  </div>        
 
             <br> <!-- style with css -->
 
