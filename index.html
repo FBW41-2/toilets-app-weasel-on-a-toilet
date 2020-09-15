@@ -18,7 +18,8 @@
         <form id="survey-form" action="https://kloapp.herokuapp.com/add" method="POST">
             <div>
                 <p>Pick your city:</p>
-                <select name="city">
+                <select name="city" required>
+                    <option value="">Please pick a city</option> <!-- make sure people select the correct city before data is sent -->
                     <option value="COL">Cologne</option>
                     <option value="DUS">Weird city (Duss)</option>
                     <option value="BON">Bonn</option>
@@ -30,20 +31,21 @@
             <div>
                 <label>
                     Street:
-                    <input type="text" placeholder="Enter the street" required="text" name="street">
+                    <input type="text" required="text" name="street">
                 </label>
                 <label>
                     Street Nr:
-                    <input type="text" placeholder="Enter the house nr." required="number" name="streetnr">
+                    <input type="text" required="number" name="streetnr">
                 </label>
                 <label>
                     Potty-location:
-                    <input type="text" placeholder="Where's the pooper?" required="text" name="name">
+                    <input type="text" required="text" name="name">
                 </label>
             </div>
 
             <br> <!-- style with css -->
             <!-- add switches instead of checkboxes (toggle switch) should store value -->
+            <!-- find solutions that use a bit less markup & css -->
 
             <h2>💩 features</h2>
             <div>
@@ -74,6 +76,9 @@
             <textarea name="feat-access" id="survey-form"></textarea>
 
             <br> <!-- style with css -->
+            <!-- add star css to replace radio buttons -->
+            <!-- pure css star rating input - use font awesome -->
+            <!-- or add some scale/ slider -->
 
                 <h2>Rate your 💩!</h2>
                 <div>
@@ -89,8 +94,6 @@
                     <label for="rating">1 star</label>
                 </div>
 
-            </div>
-
             <br> <!-- style with css -->
 
             <input type="submit"> your responses</input>
@@ -98,7 +101,7 @@
             <br> <!-- style with css -->
             <br> <!-- style with css -->
 
-            <h3>Or checkout some of our other work 👇</h3>
+            <h3>Checkout some of our other work 👇</h3>
             <button>
                 <a href="/table.html" target="blank" id="table-link">
                     Look-up a 💩
@@ -112,3 +115,4 @@
 </body>
 
 </html>
+

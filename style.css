@@ -10,10 +10,15 @@ form {
     width: 800px;
 }
 
-/* doesn't work? - add focus state effect for form fields */
+/* acts kinda weird */
 input:focus {
     padding: 2px;
     border-color: pink;
+}
+
+input:valid {
+    padding: 2px;
+    border-color: lightgreen;
 }
 
 input:invalid {
